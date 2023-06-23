@@ -8,6 +8,7 @@ const getUserByEmailIdAndPassword = (email: string, password: string) => {
     }
   }
   return null;
+  //throw an error 
 };
 const getUserById = (id:any) => {
   let user = userModel.findById(id);
