@@ -21,16 +21,16 @@ const database = [
 
 const userModel = {
 
-  /* FIX ME (types) 😭 */
-  findOne: (email: any) => {
+  /*  (types) 😭 */
+  findOne: (email: String) => {
     const user = database.find((user) => user.email === email);
     if (user) {
       return user;
     }
     throw new Error(`Couldn't find user with email: ${email}`);
   },
-  /* FIX ME (types) 😭 */
-  findById: (id: any) => {
+  /* (types) 😭 */
+  findById: (id: Number) => {
     const user = database.find((user) => user.id === id);
     if (user) {
       return user;
